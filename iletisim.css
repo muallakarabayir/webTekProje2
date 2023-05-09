@@ -1,0 +1,44 @@
+.navbar {
+    color: white;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.login {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .navbar li:last-child {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+}
+
+.form {
+    max-width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar li:last-child {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .form {
+        max-width: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
