@@ -9,7 +9,7 @@
     <meta none="viewport" content="width-device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge" ;>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="mirasimiz.css">
 </head>
 
 <body>
@@ -31,50 +31,41 @@
                         <a class="nav-link active" aria-current="page" href="mirasimiz.html">Mirasımız</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a>
+                        <a class="nav-link" aria-current="page" href="ilgiAlanlarim.html">İlgi Alanlarım</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">İletişim </a>
+                        <a class="nav-link" aria-current="page" href="iletisim.html">İletişim </a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="login.php">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-
-
-    <form class="form" method="post" action="login.php">
-        <div class="input-wrapper">
-            <label for="username">Kullanıcı Adı</label>
-            <input class="input-field" class="input-wrapper" type="text" id="username" name="username" required>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h4>Gürün Gökpınar Gölü</h4>
+                <p class="card-text">Sivas kent merkezine 147, Gürün ilçe merkezine 10 kilometre mesafedeki Gökpınar Gölü, dipten kaynaklarla besleniyor ve derinliği 15 metreyi buluyor. Berrak suyu ve turkuaz mavisi görünümüyle yerli ve yabancı turistlerin ilgisini çeken,
+                    su altı sporlarıyla uğraşanların tercih ettiği gölde, son yıllarda sk sık irtifa dalışları gerçekleştiriliyor. Göl çevresindeki restoran, otel, cami, basketbol, voleybol ve çim futbol sahası ile piknik alanları, yerli ve yabancı turistlere
+                    konaklama ve sosyal aktivite imkanı sunuyor..</p>
+            </div>
         </div>
-        <div class="input-wrapper">
-            <label for="password">Şifre</label>
-            <input class="input-field" type="password" id="password" name="password" required>
+        <div class="slider" style="width: 20rem;
+        margin-left:20px;
+        margin-top: 30px;">
+            <img class="d-block w-100" src="img/thumbs_b2_aa2261815d572a32e13e29494c691190.webp">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
         </div>
-        <div>
-            <button class="button" type="submit" value="Giriş Yap">Giriş Yap</button>
-        </div>
-
-    </form>
+    </div>
+    </div>
+    <footer class="footer">
+        <p class="text-footer">
+            Copyright &copy 2023
+        </p>
+    </footer>
 </body>
 
 </html>
-
-<?php
-  if(isset($_POST['submit'])){
-   $un=$_POST['username'];
-   $pw=$_POST['password'];
-
-   if($un=='username' && $pw=='password'){
-    header("location:login.html");
-    exit();
-   }
-   else{
-
-   }
- 
-        
-  }
-
-?>
