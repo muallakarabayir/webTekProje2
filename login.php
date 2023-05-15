@@ -1,3 +1,20 @@
+<?php
+ob_start();
+$user = 'username';
+$pass = 'password';
+// E-posta doğrulama
+if (isset($_POST["username"])) {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    if ($username ==$user && $password==$pass) {
+      header("location:login.html");
+    }
+    else {
+        echo "Hatali sifre yada hatali kullanici adi";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html long="en">
 
@@ -41,8 +58,6 @@
         </div>
     </nav>
 
-
-
     <form class="form" method="post" action="login.php">
         <div class="input-wrapper">
             <label for="username">Kullanıcı Adı</label>
@@ -61,20 +76,4 @@
 
 </html>
 
-<?php
-  if(isset($_POST['submit'])){
-   $un=$_POST['username'];
-   $pw=$_POST['password'];
 
-   if($un=='username' && $pw=='password'){
-    header("location:login.html");
-    exit();
-   }
-   else{
-
-   }
- 
-        
-  }
-
-?>

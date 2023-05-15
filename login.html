@@ -13,9 +13,50 @@
 </head>
 
 <body>
-    <center>
-        <h1>wellcome</h1>
-    </center>
+    <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mualla</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sehrim.html">Şehrim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="mirasimiz.html">Mirasımız</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">İletişim </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <form class="form" method="post" action="login.php">
+        <div class="input-wrapper">
+            <label for="username">Kullanıcı Adı</label>
+            <input class="input-field" class="input-wrapper" type="text" id="username" name="username" required>
+        </div>
+        <div class="input-wrapper">
+            <label for="password">Şifre</label>
+            <input class="input-field" type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button class="button" type="submit" value="Giriş Yap">Giriş Yap</button>
+        </div>
+
+    </form>
 </body>
 
 </html>
