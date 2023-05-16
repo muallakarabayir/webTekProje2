@@ -39,22 +39,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <form class="form" method="post" action="login.php">
-        <div class="input-wrapper">
-            <label for="username">Kullanıcı Adı</label>
-            <input class="input-field" class="input-wrapper" type="text" id="username" name="username" required>
-        </div>
-        <div class="input-wrapper">
-            <label for="password">Şifre</label>
-            <input class="input-field" type="password" id="password" name="password" required>
-        </div>
-        <div>
-            <button class="button" type="submit" value="Giriş Yap">Giriş Yap</button>
-        </div>
-
-    </form>
+</nav>
+<h1>HOŞEGELDİNİZ</h1>
 </body>
-
 </html>

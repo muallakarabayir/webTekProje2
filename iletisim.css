@@ -1,3 +1,11 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(img/af0a67acb1da6998995b122e169725d1.png);
+}
+
 .navbar {
     color: white;
 }
@@ -31,7 +39,6 @@ footer {
 }
 
 .btn {
-    width: 110px;
     position: fixed;
     margin-top: 50px;
     left: 45%;
@@ -39,7 +46,6 @@ footer {
 }
 
 .btn-2 {
-    width: 110px;
     position: fixed;
     margin-top: 50px;
     left: 55%;
