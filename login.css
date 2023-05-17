@@ -1,5 +1,13 @@
 * {
-    font-style: "Poppins", sans-serif;
+    font-family: 'Poppins';
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(img/af0a67acb1da6998995b122e169725d1.png);
 }
 
 .navbar {
@@ -31,6 +39,7 @@ footer {
 }
 
 .input-wrapper {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -45,8 +54,7 @@ footer {
     border-radius: 8px;
 }
 
-.button {
-    background-color: #ffffff;
+.btn {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 120px;

@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-image: url(img/af0a67acb1da6998995b122e169725d1.png);
+    font-family: 'Poppins';
 }
 
 .navbar {
@@ -35,6 +36,13 @@ footer {
     width: 100px;
 }
 
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +58,6 @@ footer {
     margin-bottom: 10px;
     padding: 10px;
     flex-basis: 30%;
-    /* Card'ların genişliği */
 }
 
 .card-title {

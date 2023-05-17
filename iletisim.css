@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins';
+}
+
 body {
     background-repeat: no-repeat;
     background-position: center;
@@ -63,4 +67,8 @@ footer {
         margin: 0 auto;
         margin-top: 100px;
     }
+}
+
+.radio-container {
+    margin-top: 25px;
 }

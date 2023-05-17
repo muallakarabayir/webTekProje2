@@ -40,6 +40,8 @@
             </div>
         </div>
 </nav>
-<h1>HOŞEGELDİNİZ</h1>
+<center>
+<h1 >HOŞGELDİNİZ</h1>
+</center>
 </body>
 </html>
