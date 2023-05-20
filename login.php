@@ -1,7 +1,7 @@
 <?php
 // Kullanıcı adı ve şifreyi burada kontrol edin
-$valid_username = "kullanici";
-$valid_password = "sifre";
+$valid_username = "b211210059@gmail.com";
+$valid_password = "1234";
 
 // Post verilerini alın
 $username = $_POST['username'];

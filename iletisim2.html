@@ -48,12 +48,27 @@
         </div>
     </nav>
 
-    <div id="root"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const formData = JSON.parse(localStorage.getItem('formData'));
 
-    <script src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.development.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script type="text/babel" src="js/iletisim.js"></script>
+            // Verileri al ve sayfada göster
+            document.getElementById('name').innerText = formData.name;
+            document.getElementById('email').innerText = formData.email;
+            document.getElementById('message').innerText = formData.message;
+            document.getElementById('city').innerText = formData.city;
+            document.getElementById('gender').innerText = formData.gender;
+        });
+    </script>
+    <center>
+        <div style="color: white;margin-top:100px;">
+            <h2 id="name"></h2>
+            <h2 id="email"></h2>
+            <h2 id="message"></h2>
+            <h2 id="city"></h2>
+            <h2 id="gender"></h2>
+        </div>
+    </center>
 </body>
 
 </html>
